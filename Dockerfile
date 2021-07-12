@@ -56,7 +56,7 @@ RUN apt-get install uuid-runtime
 WORKDIR /app
 COPY script.sh .
 RUN chmod a+x script.sh
-RUN chown -R 777 /app
+RUN chmod -R 777 /app
 
 # required for SSL connection
 RUN a2enmod ssl 
